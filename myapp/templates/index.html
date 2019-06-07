@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- ================ start banner Area ================= -->
+  <section class="home-banner-area">
+    <div class="container">
+      <div class="row justify-content-center fullscreen align-items-center">
+        <div class="col-lg-5 col-md-8 home-banner-left">
+          <h1 class="text-white">
+            Apprenez à reconnaître les feuilles des différents arbres
+          </h1>
+        </div>
+        <div class="offset-lg-2 col-lg-5 col-md-12 home-banner-right">
+          <img class="img-fluid" src="{% static 'img/header-img.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ End banner Area ================= -->
+
+  <!-- ================ Start Feature Area ================= -->
+  <section class="feature-area">
+    <div class="container-fluid">
+      <div class="feature-inner row">
+        <div class="col-lg-2 col-md-6">
+          <div class="feature-item d-flex">
+            <i class="ti-book"></i>
+            <div class="ml-20">
+              <h4>Fiches récapitulatives</h4>
+              <p>
+                Révisez grâce aux fiches récapitulatives qui associent les images de feuilles
+                au nom de leur arbre.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="feature-item d-flex">
+            <i class="ti-mouse-alt"></i>
+            <div class="ml-20">
+              <h4>QCM</h4>
+              <p>
+                Testez vos connaissances en feuilles d'abres grâce à notre QCM en ligne.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ End Feature Area ================= -->
+
+  <!-- ================ Start Registration Area ================= -->
+  <section class="registration-area">
+    <div class="container mb-40">
+      <div class="row align-items-end">
+        <div class="col-lg-5">
+          <div class="section-title text-left text-white mt-5">
+            <h2 class="text-white">
+              Commencez à mieux connaître la nature dès maintenant
+            </h2>
+            <p class="fz-16">
+              Inscrivez vous pour avoir accès gratuitement aux fiches déstinés à vous permettre de reconnaître a quel arbre appartient une feuille, 
+              et à un quizz pour tester vos connaissances.
+            </p>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-4 col-md-6">
+          <div class="course-form-section">
+            <h3 class="text-white">CONTENU GRATUIT</h3>
+            <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
+              {% csrf_token %}
+              <div class="form-group col-md-12">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Addresse email" onfocus="this.placeholder = ''"
+                 onblur="this.placeholder = 'Addresse email'">
+              </div>
+              <div class="form-group col-md-12">
+                  <input type="password" class="form-control" id="password1" name="password1" placeholder="Mot de passe" onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Mot de passe'">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirmation du mot de passe" onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Confirmation du mot de passe'">
+                </div>
+              <div class="col-lg-12 text-center">
+                <button class="btn text-uppercase">Tester</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ End Registration Area ================= -->
+{% endblock %}
