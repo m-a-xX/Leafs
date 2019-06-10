@@ -4,11 +4,37 @@
 {% block content %}
 <!-- ================ start banner Area ================= -->
 <section class="home-banner-area">
-  <div class="row justify-content-center fullscreen align-items-center">
-    <div class="d-flex flex-column bd-highlight mb-3" style="border:3px solid black;">
-      <div class="p-2 bd-highlight" style="border:3px solid blue;">Flex item 1</div>
-      <div class="p-2 bd-highlight" style="border:3px solid blue;">Flex item 2</div>
-      <div class="p-2 bd-highlight" style="border:3px solid blue;">Flex item 3</div>
+  <div class="screen-container fullscreen">
+    <div class="leafs-container">
+      <div class="leafs-title">
+        <h3>Feuilles d'arbres</h3>
+      </div>
+      <div class="leafs">
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/erable.png' %}" alt="Feuille d'erable"/>
+          <p><a>Erable</a></p>
+        </div>
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/bouleau.png' %}" alt="Feuille de bouleau"/>
+          <p><a>Bouleau</a></p>
+        </div>
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/olivier.png' %}" alt="Feuille d'olivier"/>
+          <p><a>Olivier</a></p>
+        </div>
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/citronnier.jpg' %}" alt="Feuille de citronnier"/>
+          <p><a>Citronnier</a></p>
+        </div>
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/pecher.png' %}" alt="Feuille de pecher"/>
+          <p><a>Pecher</a></p>
+        </div>
+        <div class="leaf-item">
+          <img src="{% static 'img/leafs/laurier.png' %}" alt="Feuille de laurier"/>
+          <p><a>Laurier</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
