@@ -40,13 +40,20 @@
   <header class="default-header">
     <nav class="navbar navbar-expand-lg  navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="/">
-          <img id="logo" src="{% static 'img/logo.png' %}" alt="Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="lnr lnr-menu"></span>
-        </button>
+        <div class="nav-cont">
+          <div class="nav-item">
+            <a class="navbar-brand" href="/">
+              <img id="logo" src="{% static 'img/logo.png' %}" alt="Logo" />
+            </a>
+          </div>
+          <div class="nav-item mt-10">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="lnr lnr-menu"></span>
+            </button>
+          </div>
+        </div>
+
 
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
@@ -72,7 +79,7 @@
   {% endblock %}
 
   <!-- ================ start footer Area ================= -->
-  <footer style="bottom:0;">
+  <footer>
       <div class="footer-area text-center py-3 mt-40 footer">
           <a class="text-white" href="/credits">Mentions légales</a>
       </div>

@@ -38,15 +38,21 @@
 <body>
   <!-- ================ Start Header Area ================= -->
   <header class="default-header">
-    <nav class="navbar navbar-expand-lg  navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img id="logo" src="{% static 'img/logo.png' %}" alt="Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="lnr lnr-menu"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg  navbar-light">
+        <div class="container">
+          <div class="nav-cont">
+            <div class="nav-item">
+              <a class="navbar-brand" href="/">
+                <img id="logo" src="{% static 'img/logo.png' %}" alt="Logo" />
+              </a>
+            </div>
+            <div class="nav-item mt-10">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+              </button>
+            </div>
+          </div>
 
         <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
@@ -112,12 +118,12 @@
           <img src="{% static 'img/leafs/marronnier.png' %}" alt="Feuille de marronnier"/>
           <p><a>Marronnier</a></p>
         </div>
-        <div class="leaf-item"></div>
+        <div class="leaf-item empty-leaf"></div>
         <div class="leaf-item">
           <img src="{% static 'img/leafs/chene.png' %}" alt="Feuille de chene"/>
           <p><a>Chene</a></p>
         </div>
-        <div class="leaf-item"></div>
+        <div class="leaf-item empty-leaf"></div>
       </div>
     </div>
     <div class="footer-area text-center py-3 mt-40 footer-leafs">
